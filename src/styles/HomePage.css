@@ -1,0 +1,206 @@
+.home-page-container {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.home-graphic {
+    width: 500px;
+}
+
+.h-container {
+    text-align: center;
+}
+
+.h-container h1 {
+    font-family: 'Karla';
+    font-size: 60px;
+    margin: 30px;
+}
+
+.bold-h1 {
+    font-family: 'Londrina Solid', cursive;
+    font-weight: 400;
+}
+
+.content-container {
+    background-color: var(--green-dark);
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+.content-container h1 {
+    color: var(--light);
+}
+
+
+.work-container {
+    margin: auto;
+    width: 1000px;
+}
+
+.browser-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.work-container h1 {
+    margin: 60px auto;
+}
+
+.browser-outline {
+    border-radius: 20px;
+    border: solid 2px var(--light);
+    min-width: 400px;
+    height: 300px;
+    color: var(--light);
+    position: relative;
+    cursor: pointer;
+    padding: 20px;
+    padding-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.browser-outline::before {
+    position: absolute;
+    content: "";
+    width: 4rem;
+    left: 1rem;
+    height: 1.5rem;
+    top: 0.5rem;
+    background-repeat: no-repeat;
+    background-image: url('../graphics/browser-buttons.svg');
+}
+
+.browser-outline:hover {
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.browser-outline:hover::before {
+    background-image: url('../graphics/browser-button-colored.svg');
+}
+
+
+.browser-outline::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: var(--light);
+        top: 2rem;
+}
+
+.tree-planter-graphic {
+    width: 200px;
+    margin: auto;
+}
+
+.browser-outline.mobile {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.browser-graphic-mobile {
+    border-radius: 20px;
+    margin: 20px 20px 5px 20px;
+    overflow: hidden;
+    width: 200px;
+}
+
+.browser-graphic-computer {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 193px;
+}
+
+.browser-graphic-mobile.tree-planter {
+    background-image: url('../graphics/tree-planter/tree-planter-img.png');
+    background-size: cover;
+}
+
+.browser-graphic-mobile.recipe-stash {
+    background-image: url('../graphics/recipe-stash/recipe-stash-img.png');
+    background-size: cover;
+}
+
+.browser-graphic-computer.aalto-grades {
+    background-image: url('../graphics/aalto-grades/aalto-grades-img.png');
+    background-size: cover;
+}
+
+.browser-graphic-computer.aalto-program-vis {
+    background-image: url('../graphics/program-vis/aalto-program-vis-img.png');
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1150px){ 
+    .browser-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 80px;
+    }
+    .work-container {
+        width: 460px;
+    }
+    .h-container h1 {
+        font-size: 50px;
+    }
+  
+  }
+
+  @media only screen and (max-width: 850px) {
+    .h-container h1 {
+        font-size: 40px;
+    }
+    .work-container h1 {
+        font-size: 40px;
+        margin: 40px auto;
+    }
+  }
+
+  @media only screen and (max-width: 540px) {
+    .work-container h1 {
+        font-size: 34px;
+        margin: 30px auto;
+    }
+    .home-graphic {
+        width: 90vw;
+        min-width: 300px;
+    }
+    .work-container {
+        margin: auto;
+        width: 95%;
+        text-align: center;
+    }
+    .browser-outline {
+       width: 260px;
+       min-width: 260px;
+    }
+    .work-container h2 {
+        font-size: 18px;
+    }
+    .work-container p {
+        font-size: 16px;
+    }
+    .browser-outline.mobile {
+        gap: 10px;
+    }
+    .browser-graphic-mobile {
+        margin: 10px 0px 0px 0px;
+        overflow: hidden;
+        width: 150px;
+    }
+    .browser-container {
+        align-items: center;
+        text-align: left;
+    }
+
+  }

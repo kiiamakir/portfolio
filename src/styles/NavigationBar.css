@@ -1,0 +1,49 @@
+.nav-bar {
+    margin: 25px 5%;
+    display: flex;
+    align-items: center;
+  }
+  
+.nav-bar a {
+    color: var(--green-dark);
+    text-decoration: none;
+    position: relative;
+  }
+  
+.navlink-container a.active, .navlink-container a:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+  }
+
+.navlink-container {
+    font-size: 20px;
+    position: relative;
+    margin-left: auto;
+    display: flex;
+    gap: 50px;
+  }
+
+
+
+#name-link {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 36px;
+}
+
+@media only screen and (max-width: 600px) { 
+  #name-link {
+    font-size: 28px;
+  }
+  .navlink-container {
+    font-size: 18px;
+    gap: 30px;
+  }
+
+}
+
+@media only screen and (max-width: 460px) { 
+  .hidden-on-mobile {
+    display: none;
+  }
+
+}

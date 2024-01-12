@@ -1,0 +1,39 @@
+
+  h1 {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 50px;
+    color: var(--green-dark);
+    font-weight: 300;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  footer {
+    padding-left: 40px;
+  }
+
+button {
+  font-family: 'Londrina Solid', cursive;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 15px 25px;
+  cursor: pointer;
+  background-color: var(--green-light);
+  border: 2px solid var(--green-light);
+  color: var(--green-dark);
+  width: 150px;
+  align-self: center;
+  transition: background-color .6s, opacity .4s, color .4s;
+}
+
+button:hover {
+  background-color: var(--light);
+}
+
+.primary-p {
+  font-size: 20px;
+  color: var(--green-dark);
+}

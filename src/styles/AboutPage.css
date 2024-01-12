@@ -1,0 +1,135 @@
+.about-page-container {
+    margin: 40px 0px;
+}
+
+.about-flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 100px;
+}
+
+.about-graphic {
+    width: 500px;
+}
+
+.design-dev-bg {
+    background-color: var(--green-dark);
+    padding: 60px 0;
+    margin-top: 50px;
+}
+
+.design-dev-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.design-dev-container p {
+    color: var(--light);
+}
+
+.about-subh {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 40px;
+    color: var(--light);
+    font-weight: 300;
+    margin: 0px;
+}
+
+.aspect-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.aspect-container p {
+    font-size: 18px;
+}
+
+
+.about-icon {
+    width: 100px;
+}
+
+@media only screen and (max-width: 1100px){ 
+    .about-graphic {
+        width: 400px;
+    }
+  }
+
+  @media only screen and (max-width: 1000px){ 
+    .about-flex-container {
+        padding: 0px 50px;
+    }
+    .design-dev-container {
+        padding: 0px 50px;
+    }
+    .aspect-container p {
+        font-size: 16px;
+    }
+  }
+
+  @media only screen and (max-width: 850px){ 
+    .about-flex-container {
+        flex-direction: column;
+    }
+    .design-dev-container {
+        flex-direction: column;
+    }
+    .aspect-container {
+        margin: auto;
+        width: 100%;
+    }
+    .text-container p {
+        font-size: 18px;
+    }
+    .about-graphic {
+        width: 400px;
+        margin: auto;
+    }
+    .about-page-container {
+        margin-top: 0;
+    }
+  }
+
+  @media only screen and (max-width: 580px){ 
+    .about-graphic {
+        width: 70vw;
+        min-width: 220px;
+    }
+    .about-page-container h1 {
+        font-size: 40px;
+        margin: 20px 0;
+    }
+    .about-subh {
+        font-size: 30px;
+    }
+    .about-icon {
+        width: 80px;
+    }
+  }
+
+  @media only screen and (max-width: 400px){ 
+    .about-page-container h1 {
+        font-size: 40px;
+        margin: 20px 0;
+    }
+    .about-flex-container {
+        padding: 0px 20px;
+    }
+    .design-dev-container {
+        padding: 0px 20px;
+    }
+    .about-icon {
+        width: 60px;
+    }
+  }

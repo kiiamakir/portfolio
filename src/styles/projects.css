@@ -1,0 +1,147 @@
+.project-page {
+    background-color: var(--green-dark);
+    padding: 50px 100px;
+    text-align: center;
+}
+
+.project-container {
+    max-width: 1000px;
+    margin: auto;
+    color: var(--light);
+}
+
+.project-h {
+    color: var(--light);
+    margin: 0 0 50px 0;
+}
+
+.graphic-container {
+    padding: 5px 15px 10px 15px;
+    background-color: var(--dark-desat);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.project-graphic {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.browser-button-container {
+    display: flex;
+}
+
+.browser-buttons {
+    width: 40px;
+    margin: 10px 5px;
+}
+
+.info-container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.info-container p {
+    margin: 0;
+}
+
+.info-container.main {
+    flex-direction: row;
+    gap: 20px 50px;
+    flex-wrap: wrap;
+}
+
+.label-container {
+    background-color: rgba(37, 60, 51, 1);
+    font-size: 16px;
+    text-align: center;
+    border-radius: 40px;
+    padding: 5px 20px;
+    color: #ccdbca;
+}
+
+.tools-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.solution-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.graphic-container.mobile {
+    padding: 15px 15px 10px 15px;
+    max-width: 240px;
+}
+
+.mobile-graphic-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px 50px;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 850px) { 
+
+    .project-page {
+        padding: 50px 50px;
+    }
+    .graphic-container.mobile {
+        padding: 8px 8px 2.5px 8px;
+    }
+  
+}
+
+@media only screen and (max-width: 600px) { 
+
+    .project-page {
+        padding: 30px 30px;
+    }
+    .graphic-container.mobile {
+        padding: 5px 5px 1px 5px;
+    }
+    .project-page p {
+        font-size: 16px;
+    }
+    .project-h {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) { 
+
+    .graphic-container {
+        padding: 0px 5px 1px 5px;
+    }
+    .browser-buttons {
+        width: 20px;
+        margin: 5px 5px;
+    }
+    .project-page h2 {
+        font-size: 20px;
+    }
+    .graphic-container.mobile.hide {
+        display: none;
+    }
+    .mobile-graphic-container {
+        width: 200px;
+        margin: auto;
+    }
+}

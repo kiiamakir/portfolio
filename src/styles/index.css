@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Londrina+Solid:wght@300;400&display=swap");
+
+body {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--light);
+}
+
+#root {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --green-dark: #2B463C;
+  --green-medium: #698f4f;
+  --green-light: #b1d184;
+  --light: #F4F1E9;
+  --dark-desat: hsla(160, 52%, 71%, .1);;
+}
