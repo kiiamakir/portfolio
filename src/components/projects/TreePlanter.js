@@ -5,6 +5,7 @@ import introOne from '../../graphics/tree-planter/intro-1.png'
 import user from '../../graphics/tree-planter/user.png'
 import Video from './Video'
 import ProjectGraphic from './ProjectGraphic'
+import sketches from '../../graphics/tree-planter/initial-sketches.png'
 import figmaComponents from '../../graphics/tree-planter/figma-components.png'
 import myDesigns from '../../graphics/tree-planter/my-designs.png'
 import personas from '../../graphics/tree-planter/personas.png'
@@ -54,9 +55,11 @@ const TreePlanter = () => {
         <div className='info-container'>
           <h2>Solution</h2>
           <div className='solution-container'>
-            <p>This project required every member of our group to first design a part of the UI individually and then combine the designs to create a cohesive product. Taking inspiration from our individual designs, we created a color palette, icons and Figma components for common UI elements. The final designs were supported by a document that featured our research and the justifications for our design decisions.</p>
+            <p>This project required every member of our group to first design a part of the UI individually and then combine the designs to create a cohesive product. I was responsible for creating the views for login, signup, onboarding tutorial and user profile. Moreover, these views needed to include the functionality for logging out as well as for changing the users community or NGO. I began the design process by first creating rough sketches of my ideas. Then I moved to Figma, where I created more polished wireframes and illustrated them with graphics made in Adobe Illustrator.</p>
+            <ProjectGraphic graphic={sketches} altText={'Initial sketches and Figma designs'} />
+            <p>Taking inspiration from our individual designs, we created a color palette, icons and Figma components for common UI elements. The final designs were supported by a document that featured our research and the justifications for our design decisions.</p>
             <ProjectGraphic graphic={figmaComponents} altText={'Figma components for final designs'} />
-            <p>I was responsible for creating the views for login, signup, onboarding tutorial and user profile. Moreover, these views needed to include the functionality for logging out as well as for changing the users community or NGO. My final designs can be seen in the image below.</p>
+            <p>Utilizing the color palette and Figma components, we modified our individual designs to work together as a cohesive interface. My final designs can be seen in the image below.</p>
             <ProjectGraphic graphic={myDesigns} altText={'My final designs for Tree Planter'} />
             <p>The final Figma prototype featuring designs from every group member is presented in the video.</p>
             <Video/>
