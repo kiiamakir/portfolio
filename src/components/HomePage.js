@@ -19,6 +19,7 @@ const HomePage = () => {
             <div className='browser-outline mobile' onClick={() => navigate('/work/recipe-stash')}>
               <div>
                 <h2>Recipe Stash</h2>
+                <p>UI Design</p>
                 <p>Web Development</p>
               </div>
               <div className='browser-graphic-mobile recipe-stash'></div>
